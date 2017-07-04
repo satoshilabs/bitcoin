@@ -43,13 +43,13 @@ class BIP148Test(BitcoinTestFramework):
         self.num_nodes = 8
         self.setup_clean_chain = False
         self.extra_args = [
-             [bip9_blockver(0)],   # for initial CSV activation only
-             [bip9_blockver(1)],
-             [bip9_blockver()],
+             [bip9_blockver(0), "-bip148=0"],   # for initial CSV activation only
+             [bip9_blockver(1), "-bip148=0"],
+             [bip9_blockver(), "-bip148=0"],
              [bip9_blockver(1), "-bip148"],
-             [bip9_blockver(1)],
-             [],           # non-mining user, restarts with -bip148 on Aug 5th
-             [],           # well connected, non BIP148 peer
+             [bip9_blockver(1), "-bip148=0"],
+             ["-bip148=0"],           # non-mining user, restarts with -bip148 on Aug 5th
+             ["-bip148=0"],           # well connected, non BIP148 peer
              ["-bip148"]]  # well connected, BIP148 peer
         for ea in self.extra_args:
             ea.append('-whitelist=::/0')
