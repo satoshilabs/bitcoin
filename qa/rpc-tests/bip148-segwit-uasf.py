@@ -209,6 +209,9 @@ class BIP148Test(BitcoinTestFramework):
         self.connect_all()
 
     def run_test(self):
+        time = self.AUG_1 + (self.day*24*60*60)
+        set_node_times(self.nodes, time)
+
         cnt = self.nodes[0].getblockcount()
 
         # Lock in CSV
