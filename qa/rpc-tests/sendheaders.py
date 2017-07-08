@@ -577,25 +577,6 @@ class SendHeadersTest(BitcoinTestFramework):
         # Remove the first two entries (blocks[1] would connect):
         blocks = blocks[2:]
 
-        # Now try to see how many unconnecting headers we can send
-        # before we get disconnected.  Should be 5*MAX_UNCONNECTING_HEADERS
-        for i in range(5*MAX_UNCONNECTING_HEADERS - 1):
-            # Send a header that doesn't connect, check that we get a getheaders.
-            with mininode_lock:
-                test_node.last_getheaders = None
-            test_node.send_header_for_blocks([blocks[i%len(blocks)]])
-            test_node.wait_for_getheaders(timeout=1)
-
-        # Eventually this stops working.
-        with mininode_lock:
-            self.last_getheaders = None
-        test_node.send_header_for_blocks([blocks[-1]])
-
-        # Should get disconnected
-        test_node.wait_for_disconnect()
-        with mininode_lock:
-            self.last_getheaders = True
-
         print("Part 5: success!")
 
         # Finally, check that the inv node never received a getdata request,
