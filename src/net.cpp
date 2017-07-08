@@ -1955,6 +1955,9 @@ bool CConnman::OpenNetworkConnection(const CAddress& addrConnect, bool fCountFai
         pnode->fFeeler = true;
     if (fAddnode)
         pnode->fAddnode = true;
+    if (IsWhitelistedRange(pnode->addr)) {
+        pnode->fWhitelisted = true;
+    }
 
     GetNodeSignals().InitializeNode(pnode, *this);
     {
