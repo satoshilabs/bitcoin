@@ -41,10 +41,50 @@
         <source>&amp;Delete</source>
         <translation>I&amp;zbriši</translation>
     </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Izberi naslov prejemnika kovancev</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Izberi naslov, na katerega želiš prejeti kovance</translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation>&amp;Izberi</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Imenik naslovov za pošiljanje</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Imenik naslovov za prejemanje</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Izvozi seznam naslovov</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Podatkov ni bilo mogoče izvoziti.</translation>
+    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
-    </context>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Naslov</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(brez oznake)</translation>
+    </message>
+</context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -62,6 +102,14 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Ponovite novo geslo</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Odkleni denarnico</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Odšifriraj denarnico</translation>
     </message>
     </context>
 <context>
@@ -418,6 +466,10 @@
         <source>Confirmed</source>
         <translation>Potrjeno</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(brez oznake)</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -523,6 +575,10 @@
         <translation>Uporabi to podatkovno mapo:</translation>
     </message>
     <message>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
+    <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Napaka: Ni mogoče ustvariti mape "%1".</translation>
     </message>
@@ -596,14 +652,6 @@
         <translation>Število programskih &amp;niti za preverjanje</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Sprejemaj zunanje povezave</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Dovoli dohodne povezave</translation>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Naslov IP posredniškega strežnika (npr. IPv4: 127.0.0.1 ali IPv6: ::1)</translation>
     </message>
@@ -614,10 +662,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Naslovi URL tretjih oseb (npr. raziskovalec blokov), ki bodo navedeni v kontekstnem meniju seznama transakcij. Niz %s iz naslova URL je nadomeščen s hash vrednostjo transakcije. Več zaporednih naslovov URL je med seboj ločenih z znakom |.</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>Zunanje povezave za transakcije</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -688,10 +732,6 @@
         <translation>Vrata posredniškega strežnika (npr. 9050)</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Za dostop do soležnikov preko skritih storitev Tor uporabi drug posredniški strežnik SOCKS5:</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>O&amp;kno</translation>
     </message>
@@ -754,6 +794,10 @@
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
         <translation>Program bo zaustavljen. Želite nadaljevati z izhodom?</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Napaka</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -852,7 +896,15 @@
         <source>Node/Service</source>
         <translation>Naslov</translation>
     </message>
-    </context>
+    <message>
+        <source>Sent</source>
+        <translation>Oddano</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Prejeto</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -895,7 +947,27 @@
         <source>%1 and %2</source>
         <translation>%1 in %2</translation>
     </message>
-    </context>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KiB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MiB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GiB</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>neznano</translation>
+    </message>
+</context>
 <context>
     <name>QObject::QObject</name>
     </context>
@@ -1025,10 +1097,6 @@
         <translation>&amp;Omrežni promet</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Počisti</translation>
-    </message>
-    <message>
         <source>Totals</source>
         <translation>Promet</translation>
     </message>
@@ -1047,30 +1115,6 @@
     <message>
         <source>Clear console</source>
         <translation>Počisti konzolo</translation>
-    </message>
-    <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Uporabite tipki gor in dol za navigacijo po zgodovini ukazov. Uporabite &lt;b&gt;Ctrl-L&lt;/b&gt; za izbris zaslona in zgodovine ukazov.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Vtipkajte &lt;b&gt;help&lt;/b&gt; za pregled razpoložljivih ukazov.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KiB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MiB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GiB</translation>
     </message>
     <message>
         <source>via %1</source>
@@ -1114,14 +1158,6 @@
     <message>
         <source>&amp;Message:</source>
         <translation>&amp;Sporočilo:</translation>
-    </message>
-    <message>
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Ponovno uporabite enega od že uporabljenih naslovov za prejemanje. Večkratna uporaba istih naslovov za prejemanje negativno vpliva na varnost in zasebnost. To opcijo uporabite samo v primeru, da poustvarjate obstoječ zahtevek za plačilo.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>P&amp;onovno uporabite obstoječ naslov za prejemanje. (Ni priporočeno.)</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
@@ -1190,9 +1226,25 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Shrani sliko ...</translation>
     </message>
+    <message>
+        <source>Address</source>
+        <translation>Naslov</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(brez oznake)</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
@@ -1273,10 +1325,6 @@
         <translation>Skrij</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>skupno vsaj</translation>
-    </message>
-    <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation>Dokler bo v blokih še dovolj prostora za vse nastajajoče transakcije, zadostuje, če plačate samo minimalno provizijo. Ko pa se bo količina vseh transakcij povečala do meja zmogljivosti omrežja, se lahko zgodi, da vaša transakcija brez večje provizije nikoli ne bo potrjena.</translation>
     </message>
@@ -1295,14 +1343,6 @@
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Samodejni obračun provizije še ni pripravljen. Po navadi izračun traja nekaj blokov ...)</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>navadno</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>hitro</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1336,7 +1376,11 @@
         <source>S&amp;end</source>
         <translation>&amp;Pošlji</translation>
     </message>
-    </context>
+    <message>
+        <source>(no label)</source>
+        <translation>(brez oznake)</translation>
+    </message>
+</context>
 <context>
     <name>SendCoinsEntry</name>
     <message>
@@ -1539,9 +1583,29 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(brez oznake)</translation>
+    </message>
     </context>
 <context>
     <name>TransactionView</name>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Naslov</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Podatkov ni bilo mogoče izvoziti.</translation>
+    </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
@@ -1610,6 +1674,10 @@
         <translation>&lt;category&gt; je lahko:</translation>
     </message>
     <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Sprejemaj zunanje povezave (privzeto: 1, razen če ste vklopili opciji -proxy ali -connect)</translation>
+    </message>
+    <message>
         <source>Block creation options:</source>
         <translation>Možnosti ustvarjanja blokov:</translation>
     </message>
@@ -1666,10 +1734,6 @@
         <translation>Izvornega bloka ni mogoče najti ali pa je neveljaven. Preverite, če ste izbrali pravo podatkovno mapo za izbrano omrežje.</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Neveljaven naslov tipa -onion: '%s'</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Na voljo ni dovolj deskriptorjev datotek.</translation>
     </message>
@@ -1690,10 +1754,6 @@
         <translation>Nastavitev velikosti predpomnilnik podatkovne baze v MiB (%d do %d, privzeto: %d)</translation>
     </message>
     <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Nastavitev maksimalne velikosti bloka v bajtih (privzeto: %d)</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Ime datoteke z denarnico (znotraj podatkovne mape)</translation>
     </message>
@@ -1706,14 +1766,6 @@
         <translation>Preverjam celovitost blokov ...</translation>
     </message>
     <message>
-        <source>Verifying wallet...</source>
-        <translation>Preverjam celovitost denarnice ...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Datoteka %s z denarnico se nahaja izven podatkovne mape %s</translation>
-    </message>
-    <message>
         <source>Wallet options:</source>
         <translation>Izbire denarnice:</translation>
     </message>
@@ -1724,10 +1776,6 @@
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
         <translation>Veži dani naslov in sprejemaj povezave samo od navedenih soležnikov. Za naslove protokola IPv6 uporabite zapis [gostitelj]:vrata.</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Veži dani naslov in sprejemaj povezave na JSON-RPC. Za naslove protokola IPv6 uporabite zapis [gostitelj]:vrata. To opcijo lahko navedete večkrat. (privzeto: veži vse omrežne vmesnike)</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -1822,20 +1870,12 @@
         <translation>Omogoči poizvedbe DNS za opcije -addnode, -seednode in -connect.</translation>
     </message>
     <message>
-        <source>Loading addresses...</source>
-        <translation>Nalagam naslove ...</translation>
-    </message>
-    <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation>Za dostop do soležnikov preko skritih storitev Tor uporabi drug posredniški strežnik SOCKS5 (privzeto: %s)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
         <translation>(privzeto: %s)</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Neveljaven naslov -proxy: '%s'</translation>
     </message>
     <message>
         <source>Relay non-P2SH multisig (default: %u)</source>
@@ -1874,20 +1914,12 @@
         <translation>Nalagam kazalo blokov ...</translation>
     </message>
     <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Dodaj povezavo na vozlišče in jo skušaj držati odprto</translation>
-    </message>
-    <message>
         <source>Loading wallet...</source>
         <translation>Nalagam denarnico ...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
         <translation>Ne morem </translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Ni mogoče zapisati privzetega naslova</translation>
     </message>
     <message>
         <source>Rescanning...</source>
